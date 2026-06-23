@@ -1,15 +1,64 @@
+# IntelliJ / Android Studio
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local configuration
 local.properties
+
+# Android Studio captures
+captures/
+
+# Native builds
+.externalNativeBuild/
+.cxx/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Keystores
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# Kotlin
+.kotlin/
+
+# Generated files
+generated/
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# KMP (por si lo conviertes a multiplatform en el futuro)
+shared/build/
+
+# Secrets
+secrets.properties
+*.properties.local
+
+# Fastlane (si algún día lo añades)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Environment files
+.env
+.env.*
+
+# VS Code (si alguna vez lo abres ahí)
+.vscode/
+
+# GitHub Actions local runners
+.runner/
