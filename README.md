@@ -1,6 +1,6 @@
 # AndroidPokeDex
 
-Aplicación Android desarrollada con Kotlin y Jetpack Compose que consume la API de Pokémon para explorar información detallada sobre especies, estadísticas, habilidades y evoluciones.
+Aplicación Android desarrollada con Kotlin y Jetpack Compose que consume la API de Pokémon para explorar información detallada sobre tipos, estadísticas, habilidades y evoluciones.
 
 ## 🚀 Objetivo del proyecto
 
