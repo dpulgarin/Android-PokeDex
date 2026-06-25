@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  build:
+  compile:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,4 +24,24 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Build project
-        run: ./gradlew build
+        run: ./gradlew assemble
+
+  unit-tests:
+    needs: compile
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Build project
+        run: ./gradlew test
